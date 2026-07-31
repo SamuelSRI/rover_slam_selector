@@ -1,0 +1,20 @@
+slam_selector:
+  ros__parameters:
+    indoor_pose_topic: /slam_toolbox/pose
+    exterior_pose_topic: /visual_slam/pose
+    odom_topic: /odometry/local
+    environment_topic: /env/exterior
+    active_source_topic: /localization/active_source
+
+    map_frame: map
+    odom_frame: odom
+    base_frame: base_link
+
+    publish_rate_hz: 20.0
+    source_timeout_sec: 0.5
+
+    keep_last_transform_on_timeout: true
+    preserve_continuity_on_switch: true
+
+    # Mets true si tu veux forcer map->odom à z=0 et ne garder que le yaw.
+    force_planar_output: false
