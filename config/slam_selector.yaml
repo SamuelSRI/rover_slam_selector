@@ -1,6 +1,6 @@
 slam_selector:
   ros__parameters:
-    indoor_pose_topic: /slam_toolbox/pose
+    indoor_pose_topic: /pose
     exterior_pose_topic: /visual_slam/pose
     odom_topic: /odometry/local
     environment_topic: /env/exterior
